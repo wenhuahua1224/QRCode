@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2RC-fJ-Hdl">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="IAr-od-U3y"/>
+                                    <constraint firstAttribute="height" constant="280" id="uj1-RO-qM0"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IAr-od-U3y"/>
+                                        <exclude reference="uj1-RO-qM0"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="IAr-od-U3y"/>
+                                        <include reference="uj1-RO-qM0"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tyi-T2-WYk">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.85882352939999995" green="0.71764705880000002" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="Vje-1X-ZDc"/>
+                                    <constraint firstAttribute="height" constant="30" id="sFg-jd-6Qu"/>
+                                </constraints>
+                                <state key="normal" title="生成二维码"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Vje-1X-ZDc"/>
+                                        <exclude reference="sFg-jd-6Qu"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Vje-1X-ZDc"/>
+                                        <include reference="sFg-jd-6Qu"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="generateBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tFb-cK-ubp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkK-GF-qy6">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.85882352939999995" green="0.71764705880000002" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="0wc-Cz-RKw"/>
+                                    <constraint firstAttribute="height" constant="30" id="HYI-kw-Wcv"/>
+                                </constraints>
+                                <state key="normal" title="识别二维码"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0wc-Cz-RKw"/>
+                                        <exclude reference="HYI-kw-Wcv"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="0wc-Cz-RKw"/>
+                                        <include reference="HYI-kw-Wcv"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="recognitionBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uaV-A4-7rI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MiH-k8-Lfs">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="nkK-GF-qy6" secondAttribute="trailing" constant="6" id="ANg-an-Nyy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MiH-k8-Lfs" secondAttribute="trailing" constant="10" id="Fsx-A2-lfU"/>
+                            <constraint firstItem="MiH-k8-Lfs" firstAttribute="top" secondItem="2RC-fJ-Hdl" secondAttribute="bottom" constant="20" id="VUa-gy-mv6"/>
+                            <constraint firstItem="2RC-fJ-Hdl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="VUb-yE-wDs"/>
+                            <constraint firstItem="nkK-GF-qy6" firstAttribute="top" secondItem="2RC-fJ-Hdl" secondAttribute="bottom" constant="57" id="YaL-QE-Z7p"/>
+                            <constraint firstItem="2RC-fJ-Hdl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a20-sJ-gpC"/>
+                            <constraint firstItem="Tyi-T2-WYk" firstAttribute="top" secondItem="2RC-fJ-Hdl" secondAttribute="bottom" constant="57" id="edX-A6-E5P"/>
+                            <constraint firstItem="Tyi-T2-WYk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="lnE-B4-Eb9"/>
+                            <constraint firstItem="MiH-k8-Lfs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="mmW-Ul-Mf8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2RC-fJ-Hdl"/>
+                                <exclude reference="Tyi-T2-WYk"/>
+                                <exclude reference="nkK-GF-qy6"/>
+                                <exclude reference="MiH-k8-Lfs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="edX-A6-E5P"/>
+                                <exclude reference="lnE-B4-Eb9"/>
+                                <exclude reference="ANg-an-Nyy"/>
+                                <exclude reference="YaL-QE-Z7p"/>
+                                <exclude reference="Fsx-A2-lfU"/>
+                                <exclude reference="VUa-gy-mv6"/>
+                                <exclude reference="mmW-Ul-Mf8"/>
+                                <exclude reference="VUb-yE-wDs"/>
+                                <exclude reference="a20-sJ-gpC"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="2RC-fJ-Hdl"/>
+                                <include reference="Tyi-T2-WYk"/>
+                                <include reference="nkK-GF-qy6"/>
+                                <include reference="MiH-k8-Lfs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="edX-A6-E5P"/>
+                                <include reference="lnE-B4-Eb9"/>
+                                <include reference="ANg-an-Nyy"/>
+                                <include reference="YaL-QE-Z7p"/>
+                                <include reference="Fsx-A2-lfU"/>
+                                <include reference="VUa-gy-mv6"/>
+                                <include reference="mmW-Ul-Mf8"/>
+                                <include reference="VUb-yE-wDs"/>
+                                <include reference="a20-sJ-gpC"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="iconView" destination="2RC-fJ-Hdl" id="xAN-2B-QeV"/>
+                        <outlet property="titleLabel" destination="MiH-k8-Lfs" id="ZS5-po-hqD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="294" y="399"/>
+        </scene>
+    </scenes>
+</document>

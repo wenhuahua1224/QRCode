@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4044F4B896FA7009D80481F93035BBE194ED4863",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F062F7ABD03A1C8AAF4141FAC5D43223ACFE2981" : 0,
+    "4044F4B896FA7009D80481F93035BBE194ED4863" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F0DFC244-FDEE-43AD-8B05-A6274B7686C1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F062F7ABD03A1C8AAF4141FAC5D43223ACFE2981" : "QRCode\/YZQRCode\/",
+    "4044F4B896FA7009D80481F93035BBE194ED4863" : "QRCode\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "YZQRCode",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "YZQRCode.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JJ921010\/QRCode.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4044F4B896FA7009D80481F93035BBE194ED4863"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/dun-cat\/YZQRCode.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F062F7ABD03A1C8AAF4141FAC5D43223ACFE2981"
+    }
+  ]
+}
